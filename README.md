@@ -33,6 +33,71 @@ This library has the following features.
 
 ## Relative documents
 
-- [Usage](doc/USAGE.md)
+
 - [Build](doc/BUILD.md)
-- [File Format](doc/FILE_FORMAT.md)
+
+For Linux
+
+The following is required as prerequisite:
+ cmake
+ git
+ C compiler
+
+For example, on Ubuntu you can install these dependencies with the following command.
+
+$ `sudo apt install build-essential cmake git`
+
+Then, you can build nnabla-c-runtime with following command.
+
+```
+$ git clone https://github.com/sony/nnabla-c-runtime.git
+$ cd nnabla-c-runtime
+$ mkdir build
+$ cd build
+$ cmake ..
+$ cmake --build .
+
+```
+After compilation is successfully finished, you can exececute `nnablart.exe` as following:
+
+```
+$ ./src/nnablart/nnablart version
+C Runtime Version [1.2.0.dev1_c1]
+NNB Version [3]
+NNB Revision [API_LEVEL_6]
+```
+
+
+For Windows
+
+The following is required as prerequisite:
+
+cmake installed and in your PATH
+git installed and in your PATH
+Visual C++ compiler available.
+
+The easiest way to install is to use Chocolatey.
+Once you set up Chocolatey,
+
+`> choco install cmake git choco visualstudio2019-workload-vctools`
+
+It can be installed with the above command only.
+Then,
+
+Open `Visual C++ 2019 x64 Native Build Tools Command Prompt` from windows menu.
+```
+> git clone https://github.com/sony/nnabla-c-runtime.git
+> cd nnabla-c-runtime
+> mkdir build
+> cd build
+> cmake ..
+> cmake --build . --config Release
+```
+
+After compilation is finished successfully, You can exececute `nnablart.exe`
+
+`>src\nnablart\Release\nnablart.exe version`
+
+> C Runtime Version [1.2.0.dev1_c1]
+> NNB Version [3]
+> NNB Revision [API_LEVEL_6]
