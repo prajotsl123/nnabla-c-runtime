@@ -102,7 +102,7 @@ After compilation is finished successfully, You can exececute `nnablart.exe`
 > NNB Version [3]
 > NNB Revision [API_LEVEL_6]
 
- -[Usage]
+- [Usage](doc/USAGE.md)
  
  `./nnablart infer bin_class.nnb input.bin output_1` in Linux
  `./nnablart.exe infer bin_class.nnb input.bin output_1` in Win
